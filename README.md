@@ -1,93 +1,103 @@
 # Deomali Coffee Cafe & Roastery
 
-A premium, mobile-first landing page for **Deomali Coffee Cafe & Roastery**, designed with a minimalist earthy luxury aesthetic.
+A premium, aesthetic, fully responsive mobile-first landing page for Deomali Coffee Cafe & Roastery in Bhubaneswar, Odisha.
 
-The site highlights the cafe's Koraput single-origin Arabica story, menu, location, open hours, and direct WhatsApp contact.
+## Aesthetic: Minimalist Earthy Luxury
 
-## Tech Stack
-
-- **Next.js** - React framework for production-ready deployment
-- **React** - Component-based UI
-- **Tailwind CSS** - Utility-first responsive styling
-- **Framer Motion** - Smooth scroll and entrance animations
-- **Lucide React** - Modern SVG icons
-- **Unsplash Images** - High-quality placeholder imagery
+- **Color Palette**: Deep espresso browns, warm creamy off-whites, muted forest greens
+- **Typography**: Playfair Display (headings), Inter (body text)
+- **Design Philosophy**: Clean, warm, grounded in Odisha's coffee heritage
 
 ## Features
 
-- Fully responsive mobile-first design
-- Premium dark-overlay hero section
-- Smooth scrolling navigation
-- Logo image placeholder ready for replacement
-- Brand story section with two-column layout
-- Complete categorized cafe menu with INR pricing
-- Location and open-hours footer
-- Social media icon links
-- Floating WhatsApp button
-- Ready to deploy on Vercel or Netlify
+### Sections
+1. **Navigation Bar** — Logo placeholder, smooth-scroll links, mobile hamburger menu
+2. **Hero Section** — Full-height coffee roasting background, headline, CTA
+3. **Our Story** — Two-column layout with Deomali hills imagery, brand narrative
+4. **The Menu** — Tabbed categories (Hot Coffees, Cold Brews, Frappes, Quick Bites) with prices in INR
+5. **Footer** — Address, hours, social icons
+6. **WhatsApp Floating Button** — Bottom-right corner
+
+### Technical Features
+- Mobile-first responsive design
+- Framer Motion scroll animations
+- Smooth scroll navigation
+- Tabbed menu with hover lift effects
+- Google Fonts (Playfair Display + Inter)
+- Lucide React icons
+
+## Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Fonts**: Google Fonts (Playfair Display, Inter)
 
 ## Getting Started
 
-Install dependencies:
-
 ```bash
+# Install dependencies
 npm install
-```
 
-Run the development server:
-
-```bash
+# Run development server
 npm run dev
-```
 
-Open the app in your browser:
-
-```text
-http://localhost:3000
-```
-
-## Build for Production
-
-```bash
+# Build for production
 npm run build
 ```
 
-Start the production server:
+Open [http://localhost:3000](http://localhost:3000)
 
+## Deployment
+
+Ready to deploy on **Vercel** or **Netlify**:
+
+### Vercel
 ```bash
-npm run start
+npm i -g vercel
+vercel
+```
+
+### Netlify
+```bash
+npm run build
+# Deploy the 'out' or 'dist' folder
 ```
 
 ## Customization
 
-To replace the logo, update the `src` value in the logo image inside:
+### Replace Logo
+Replace `/public/images/logo-placeholder.svg` with your actual cafe logo image and update the `src` in `components/navbar.tsx`.
 
-```text
-app/page.tsx
-```
+### Update WhatsApp Number
+Change the phone number in:
+- `components/whatsapp-button.tsx`
+- `components/sections/footer.tsx`
 
-You can also update menu items, prices, address, hours, social links, and the WhatsApp link from the same file.
+### Update Images
+The hero and story sections use Unsplash placeholder images. Replace with your own:
+- Hero: Coffee roasting image
+- Story: Deomali hills / coffee farmers image
 
-## Brand Palette
+### Menu Prices
+All prices are in INR (₹). Edit in `components/sections/menu.tsx`.
 
-- Deep espresso browns
-- Warm creamy off-whites
-- Muted forest greens
+## Menu Items
 
-## Typography
+### Hot Coffees
+Espresso, Filter Coffee, Americano, Cafe Latte, Cappuccino, Mocha, Flat White
 
-- **Playfair Display** for headings
-- **Inter** for body text
+### Cold Brews & Iced
+Vietnamese Cold Coffee, Caramel Cold Coffee, Hazelnut Iced Latte, Classic Cold Brew, Irish Black Coffee
 
-## Deployment
+### Frappes & Shakes
+Classic Frappe, Choco Chip Mocha Frappe, Vanilla Bean Shake
 
-This project can be deployed directly to:
+### Quick Bites & Bakery
+Butter Croissant, Choco Lava Cake, Grilled Chicken Sandwich, Peri Peri Fries, Garlic Bread with Cheese
 
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+## License
 
-For Vercel, connect the GitHub repository and deploy with the default Next.js settings.
-
-## Project Status
-
-The landing page is complete and production-build verified.
+MIT License

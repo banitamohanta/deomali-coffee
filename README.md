@@ -100,4 +100,3 @@ Butter Croissant, Choco Lava Cake, Grilled Chicken Sandwich, Peri Peri Fries, Ga
 
 ## License
 
-MIT License
